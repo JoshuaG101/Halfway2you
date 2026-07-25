@@ -1,70 +1,107 @@
+# Halfway 🚀
 
-About
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Expo](https://img.shields.io/badge/Expo-54-orange)](https://expo.dev/)
+
+## About
+
+Halfway is an **Expo‑powered cross‑platform** application that showcases location‑based services, Google Places integration, and real‑time user interactions. It runs on Android, iOS, and the web.
+
+---
+
+## Screenshots
+
+![App screenshot](images/screenshot.png)
+
+## Demo Video
+
+[Demo video](https://youtu.be/placeholder)
 
 
-Technologies Used
+## Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
 
-Features
+---
 
-The Process
+## Features
 
-What I learned 
+- **Cross‑platform**: Android, iOS, and Web via Expo.
+- **Location & Places**: `expo-location` + Google Places API for nearby venue discovery.
+- **Authentication**: Social sign‑in with `expo-auth-session`.
+- **Real‑time UI**: Animated maps with clustering via `react-native-map-clustering`.
+- **Polished UI**: Lottie animations, custom icons, dark/light themes.
 
-How it can be improved
+---
 
-How to run the project
+## Tech Stack
 
-Video
+| Layer | Technology |
+|-------|------------|
+| Framework | Expo SDK 54 (React Native) |
+| Language | TypeScript |
+| Navigation | expo‑router & @react‑navigation |
+| State Management | React hooks |
+| Styling | Tailwind‑like utilities via `expo-style` (custom) |
+| Backend | Firebase (Auth, Firestore) |
+| Maps | `react-native-maps`, `react-native-map-clustering` |
+| Location | `expo-location`, `expo-crypto` |
+| Testing | Expo CLI lint & TypeScript checks |
 
-An Expo-powered cross‑platform app that showcases location‑based services, Google Places integration, and real‑time user interactions.
+---
 
-✨ Features
-Cross‑platform: Runs on Android, iOS, and web via Expo.
-Location & Places: Uses expo-location and Google Places API to fetch nearby venues.
-Authentication: Integrated with expo-auth-session for social sign‑in.
-Real‑time UI: Animated maps with clustering via react-native-map-clustering.
-State‑of‑the‑art UI: Lottie animations, custom icons, and dark/light themes.
-🛠️ Tech Stack
-Layer	Technology
-Framework	Expo SDK 54 (React Native)
-Language	TypeScript
-Navigation	expo-router & @react-navigation
-State Management	React hooks
-Styling	Tailwind‑like utilities via expo-style (custom)
-Backend	Firebase (auth, Firestore)
-Maps	react-native-maps, react-native-map-clustering
-Location	expo-location, expo-crypto
-Testing	Expo CLI built‑in lint & TypeScript checks
-📦 Installation
-bash
+## Installation
 
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/halfway.git
+cd halfway
+
+# Install dependencies
 npm install
+```
 
+---
+
+## Usage
+
+```bash
+# Start the development server
 npm start
+```
 
-🔧 Configuration
-Environment variables: Create a .env file at the project root with Firebase credentials and Google Places API key. Example:
-env
+Open the Expo Go app on your device or visit the web URL printed in the terminal.
 
-EXPO_PUBLIC_FIREBASE_API_KEY=your_key_here
-EXPO_PUBLIC_GOOGLE_PLACES_API_KEY=your_key_here
-Expo settings: Adjust app.json for custom splash screens, icons, and update URLs.
-📚 Documentation & Resources
-Expo Documentation
-React Navigation
-Google Places API
-Firebase for React Native
-🧹 Cleaning & Resetting
-bash
+---
 
-npm run reset-project  
-📈 Future Improvements (Roadmap)
-Replace deprecated expo-random with expo-crypto equivalents.
-Migrate to newer versions of rimraf and glob (v9+).
-Add unit & integration tests with Jest and React Native Testing Library.
-Implement offline caching for places data.
-🤝 Contributing
-Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request. Follow the existing linting rules (npm run lint).
+## Configuration
 
-📄 License
-This project is licensed under the MIT License – see the LICENSE file for details.
+Create a `.env` file at the project root with the following variables:
+
+```
+EXPO_PUBLIC_FIREBASE_API_KEY=your_firebase_key
+EXPO_PUBLIC_GOOGLE_PLACES_API_KEY=your_places_key
+```
+
+Adjust `app.json` for custom splash screens, icons, and update URLs as needed.
+
+---
+
+## Contributing
+
+Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request. Follow the linting rules:
+
+```bash
+npm run lint
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
