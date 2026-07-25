@@ -1,107 +1,96 @@
-# Halfway 🚀
+# Halfway2you 🚀
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Expo](https://img.shields.io/badge/Expo-54-orange)](https://expo.dev/)
 
-## About
-
-Halfway is an **Expo‑powered cross‑platform** application that showcases location‑based services, Google Places integration, and real‑time user interactions. It runs on Android, iOS, and the web.
+Halfway2you is an **Expo-powered cross-platform** application that showcases location-based services, Google Places integration, and real-time user interactions. It helps groups of friends or colleagues find the perfect middle ground to meet up!
 
 ---
 
-## Screenshots
+## 📸 Demo Video
 
-![App screenshot](images/screenshot.png)
-
-## Demo Video
-
-[Demo video](https://youtu.be/placeholder)
-
-
-## Table of Contents
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
+*(Click the image below to watch the video of it running!)*
+[![Demo Video](images/screenshot.png)](https://youtu.be/placeholder)
 
 ---
 
-## Features
+## ✨ Features
 
-- **Cross‑platform**: Android, iOS, and Web via Expo.
-- **Location & Places**: `expo-location` + Google Places API for nearby venue discovery.
-- **Authentication**: Social sign‑in with `expo-auth-session`.
-- **Real‑time UI**: Animated maps with clustering via `react-native-map-clustering`.
-- **Polished UI**: Lottie animations, custom icons, dark/light themes.
-
----
-
-## Tech Stack
-
-| Layer | Technology |
-|-------|------------|
-| Framework | Expo SDK 54 (React Native) |
-| Language | TypeScript |
-| Navigation | expo‑router & @react‑navigation |
-| State Management | React hooks |
-| Styling | Tailwind‑like utilities via `expo-style` (custom) |
-| Backend | Firebase (Auth, Firestore) |
-| Maps | `react-native-maps`, `react-native-map-clustering` |
-| Location | `expo-location`, `expo-crypto` |
-| Testing | Expo CLI lint & TypeScript checks |
+- **Cross-Platform Support**: Runs flawlessly on Android, iOS, and the Web using Expo.
+- **Location & Places Integration**: Uses `expo-location` combined with the Google Places API to discover nearby venues seamlessly.
+- **Authentication**: Social sign-in capabilities with `expo-auth-session` and Firebase.
+- **Real-time UI & Interactive Maps**: Beautiful animated maps featuring marker clustering via `react-native-map-clustering`.
+- **Polished Aesthetics**: Incorporates Lottie animations, customized icons, and dynamic light/dark themes for a premium user experience.
 
 ---
 
-## Installation
+## 🛠 The Process
 
+Building Halfway2you involved multiple stages of development, from concept to execution:
+1. **Ideation & Prototyping**: We identified a common problem—finding a fair and convenient meeting place for a group of people. We designed the user flows and wireframes.
+2. **Setup & Architecture**: Chose Expo (React Native) for cross-platform support and Firebase for backend services like authentication and data storage.
+3. **Map & Location Integration**: Implementing the core functionality utilizing the Google Places API and device location services. Handling permissions safely and securely.
+4. **UI/UX Polish**: Integrating smooth animations (Lottie), fine-tuning the mapping experience, and creating an intuitive interface for groups.
+5. **Testing**: Running on physical devices and simulators to ensure a smooth, crash-free experience.
+
+---
+
+## 🧠 What I Learned
+
+Throughout the development of this project, I gained valuable insights into:
+- **Cross-Platform React Native**: Managing dependencies and UI components that work seamlessly across Android, iOS, and web using Expo SDK 54.
+- **Advanced Maps Integration**: Learning the intricacies of map clustering, custom markers, and real-time location tracking in a mobile environment.
+- **API Management**: Efficiently querying the Google Places API and handling API keys securely via environment variables.
+- **Firebase Auth & State Management**: Managing complex user states and social logins in a React application.
+- **Polishing Mobile UX**: Discovering how much micro-interactions and animations contribute to a premium app feel.
+
+---
+
+## 🚀 How it can be Improved
+
+While Halfway2you is fully functional, there's always room for growth! Future improvements could include:
+- **Push Notifications**: Alerting users when everyone in a group has selected their location or when someone arrives at the destination.
+- **In-App Chat**: Allowing users to communicate directly within their meetup group.
+- **Advanced Routing**: Displaying precise routes and estimated travel times for all users to the selected halfway point.
+- **User Profiles & History**: Saving favorite meeting spots and keeping a history of past meetups.
+- **Accessibility Enhancements**: Improving voice-over support and dynamic text scaling.
+
+---
+
+## 💻 Installation & Usage
+
+### Prerequisites
+Make sure you have Node.js and npm installed.
+
+### Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/halfway.git
-cd halfway
+git clone https://github.com/JoshuaG101/Halfway2you.git
+cd Halfway2you
 
 # Install dependencies
 npm install
 ```
 
----
-
-## Usage
-
-```bash
-# Start the development server
-npm start
-```
-
-Open the Expo Go app on your device or visit the web URL printed in the terminal.
-
----
-
-## Configuration
-
-Create a `.env` file at the project root with the following variables:
-
+### Configuration
+Create a `.env` file at the project root with your API keys:
 ```
 EXPO_PUBLIC_FIREBASE_API_KEY=your_firebase_key
 EXPO_PUBLIC_GOOGLE_PLACES_API_KEY=your_places_key
 ```
 
-Adjust `app.json` for custom splash screens, icons, and update URLs as needed.
-
----
-
-## Contributing
-
-Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request. Follow the linting rules:
-
+### Run
 ```bash
-npm run lint
+# Start the development server
+npm start
 ```
 
 ---
 
-## License
+## 🤝 Contributing
+
+Contributions are always welcome! Please fork the repository, create a feature branch, and submit a pull request. 
+
+## 📄 License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
